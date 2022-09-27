@@ -23,6 +23,7 @@ public class CustomerServiceImpl implements CustomerService {
 
 	@Autowired
 	private CustomerRepository customerRepository;
+	String s="dinesh";
 
 	@Override
 	public CustomerDTO getCustomer(Integer customerId) throws InfyBankException {
@@ -61,15 +62,15 @@ public class CustomerServiceImpl implements CustomerService {
 			throw new InfyBankException("Service.VALID_CUSTOMER");
 		}
 		else {
-			Customer customer1=new Customer();
+			Customer customer2=new Customer();
 			
-			customer1.setName(customerDTO.getName());
-			customer1.setEmailId(customerDTO.getEmailId());
-			customer1.setDateOfBirth(customerDTO.getDateOfBirth());
+			customer2.setName(customerDTO.getName());
+			customer2.setEmailId(customerDTO.getEmailId());
+			customer2.setDateOfBirth(customerDTO.getDateOfBirth());
 			
-			customerRepository.save(customer1);
+			customerRepository.save(customer2);
 			
-			return customer1.getCustomerId();
+			return customer2.getCustomerId();
 			
 		}
 		
