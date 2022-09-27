@@ -9,6 +9,7 @@ public class DemoSpringRestApplication {
 	public static void main(String[] args) {
 		//fully satis fieaalklsdnfn;ksdf
 		SpringApplication.run(DemoSpringRestApplication.class, args);
+		//hello dinesh kumar
 	}
 
 }
