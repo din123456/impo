@@ -30,7 +30,7 @@ public class CustomerAPI {
 	@Autowired
 	private Environment environment;
 
-//meaning full darDJD
+//meaning full
 	@GetMapping(value = "/customers")
 	public ResponseEntity<List<CustomerDTO>> getAllCustomers() throws InfyBankException {
 		List<CustomerDTO> customerList = customerService.getAllCustomers();
